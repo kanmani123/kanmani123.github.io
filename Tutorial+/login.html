@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>form</title>
+<script type="text/javascript">
+	 
+      function validate()
+      {
+      
+         if( document.myForm.id.value == "" )
+         {
+            alert( "Please provide your UserId!" );
+            document.myForm.id.focus() ;
+            return false;
+         }
+		 
+		          if( document.myForm.pass.value == "" )
+         {
+            alert( "Please provide your Pass!" );
+            document.myForm.pass.focus() ;
+            return false;
+         }
+             return(true);
+	  }
+	  </script>
+<br>
+<br>
+<center><b><font size="6px" >LOGIN
+</center></b>
+<br>
+<br>
+
+</head>
+<body bgcolor="#EFEFEF">
+<form action="#" name="myForm" onsubmit="return(validate());">
+<center><i><font size="5px" >
+UserID:<input type="text" name="id">
+<br>
+<br>
+Password:<input type="password" name="pass">
+<br>
+<br>
+Remember:<input type="checkbox" >
+<br>
+<br>
+ </font> 
+<center>
+<center>
+ <input type="submit" value="Submit"></input>
+  <input type="button" value="Cancel"></input> 
+  </center>
+  </form>
+</body>
+</html>
